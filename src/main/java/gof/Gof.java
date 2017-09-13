@@ -4,8 +4,8 @@ package gof;
 public class Gof {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
+    	StdDraw.rectangle(50, 50, 100, 100);
+    	
     }
 
 }
