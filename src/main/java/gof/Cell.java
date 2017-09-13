@@ -1,5 +1,6 @@
 package gof;
 
+import java.util.List;
 import java.util.Random;
 
 public class Cell {
@@ -37,6 +38,11 @@ public class Cell {
 
     public void setAlive(final boolean isAlive) {
         this.isAlive = isAlive;
+    }
+
+    public void nextGen(final List<Cell> cells) {
+        final Random rand = new Random();
+        setAlive(rand.nextBoolean());
     }
 
 }
