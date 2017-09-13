@@ -40,7 +40,7 @@ public class Cell {
         this.isAlive = isAlive;
     }
 
-    public void nextGen(final List<Cell> cells) {
+    public void nextGen() {
         final Random rand = new Random();
         setAlive(rand.nextBoolean());
     }
